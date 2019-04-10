@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+    <title>This is the title of the webpage!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+    <div class="tile is-ancestor" style="padding: 10px;">
+        <div class="tile is-vertical is-10">
+            <div class="tile">
+                <div class="tile is-parent">
+                        <article class="tile is-child notification is-primary">
+                            <p class="title">Oracle Service</p>
+                            <p class="subtitle">Left tile</p>
+                        </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-warning">
+                            <p class="title">Oracle Contract</p>
+                            <div>
+                                <p class="subtitle">Save API Params</p>
+                                    <div class="field is-horizontal">
+                                        <div class="field-label is-normal">
+                                          <label class="label">UID</label>
+                                        </div>
+                                        <div class="field-body">
+                                          <div class="field">
+                                            <p class="control">
+                                              <input class="input" type="text" value="btc-price">
+                                            </p>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="field is-horizontal">
+                                            <div class="field-label is-normal">
+                                              <label class="label">URL</label>
+                                            </div>
+                                            <div class="field-body">
+                                              <div class="field">
+                                                <p class="control">
+                                                  <input class="input" type="text" value="https://api.coindesk.com/v1/bpi/currentprice/btc.json">
+                                                </p>
+                                               </div>
+                                            </div>
+                                    </div>
+                                    <div class="field is-horizontal">
+                                            <div class="field-label is-normal">
+                                              <label class="label">Callback</label>
+                                            </div>
+                                            <div class="field-body">
+                                              <div class="field">
+                                                <p class="control">
+                                                  <input class="input" type="text" value="bpi.USD.rate">
+                                                </p>
+                                               </div>
+                                            </div>
+                                        </div>
+                            </div>
+                    </article>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="tile is-parent">
+                        <article class="tile is-child notification is-info">
+                            <p class="title">Data provider</p>
+                            <p class="subtitle">Left tile</p>
+                        </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-warning">
+                            <p class="title">Wager/Bet Contract</p>
+                            <p class="subtitle">Right tile</p>
+                    </article>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification">
+                <p class="title">Wide tile</p>
+                <p class="subtitle">Aligned with the right tile</p>
+                <div class="content">
+                    <!-- Content -->
+                </div>
+                </article>
+            </div>
+        </div>
+        <div class="tile is-parent">
+        <div class="tile is-child notification is-dark" style="display: flex; padding: 0; justify-content: center;">
+            <div class="content" style="display: flex; align-items: center;">
+            <p class="title" style="writing-mode: vertical-rl;">Blockchain</p>
+            </div>
+        </div>
+        </div>
+    </div>
+  </body>
+</html>
