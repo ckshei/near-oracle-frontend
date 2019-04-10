@@ -5,30 +5,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
     <link rel="stylesheet" type="text/css" href="style.css"> 
 </head>
+<body>
     <div class="tile is-ancestor" style="padding: 10px;">
-        <div class="tile is-vertical is-10">
+        <div class="tile is-vertical is-9">
             <div class="tile">
                 <div class="tile is-parent">
                         <article class="tile is-child notification is-primary">
-                            <p class="title">Oracle Service</p>
-                            <p class="subtitle">Left tile</p>
+							<p class="title">Oracle Service</p>
+							<p>Logs:</p>
+							<section class="box">
+									<div id="oracle-service-log">
+									</div>
+							</section>
+                            <section class="box">
+								<a class="button is-link">Get API Params</a>
+								<div id="api-params">Shows API Params Here</div>
+							</section>
+                            <section class="box">
+									<a class="button is-link">Make API Call</a>
+									<div id="api-params">Shows API Response Here</div>
+							</section>
                         </article>
                 </div>
                 <div class="tile is-parent">
                     <article class="tile is-child notification is-warning">
-                            <p class="title">Oracle Contract</p>
-                            <div>
-                                <p class="subtitle">Save API Params</p>
+							<p class="title">Oracle Contract</p>
+							<p>Logs:</p>
+							<section class="box">
+									<div id="oracle-contract-log">
+									</div>
+							</section>
+                            <section class="box">
                                     <div class="field is-horizontal">
                                         <div class="field-label is-normal">
                                           <label class="label">UID</label>
                                         </div>
                                         <div class="field-body">
-                                          <div class="field">
-                                            <p class="control">
                                               <input class="input" type="text" value="btc-price">
-                                            </p>
-                                           </div>
                                         </div>
                                     </div>
                                     <div class="field is-horizontal">
@@ -36,11 +49,7 @@
                                               <label class="label">URL</label>
                                             </div>
                                             <div class="field-body">
-                                              <div class="field">
-                                                <p class="control">
-                                                  <input class="input" type="text" value="https://api.coindesk.com/v1/bpi/currentprice/btc.json">
-                                                </p>
-                                               </div>
+                                            	<input class="input" type="text" value="https://api.coindesk.com/v1/bpi/currentprice/btc.json">
                                             </div>
                                     </div>
                                     <div class="field is-horizontal">
@@ -48,28 +57,35 @@
                                               <label class="label">Callback</label>
                                             </div>
                                             <div class="field-body">
-                                              <div class="field">
-                                                <p class="control">
-                                                  <input class="input" type="text" value="bpi.USD.rate">
-                                                </p>
-                                               </div>
+                                            	<input class="input" type="text" value="bpi.USD.rate">
                                             </div>
-                                        </div>
-                            </div>
+										</div>
+									<a class="button is-link">Save API Params</a>
+							</section>
+							<a class="button is-link">Save API Response to the blockchain</a>
                     </article>
                 </div>
             </div>
             <div class="tile">
                 <div class="tile is-parent">
-                        <article class="tile is-child notification is-info">
+                        <article class="tile is-child notification is-danger">
                             <p class="title">Data provider</p>
-                            <p class="subtitle">Left tile</p>
+							<p>Logs:</p>
+                            <section class="box">
+									<div id="data-provider-log">
+									</div>
+							</section>
                         </article>
                 </div>
                 <div class="tile is-parent">
                     <article class="tile is-child notification is-warning">
-                            <p class="title">Wager/Bet Contract</p>
-                            <p class="subtitle">Right tile</p>
+							<p class="title">Wager/Bet Contract</p>
+							<p>Logs:</p>
+                            <section class="box">
+									<div id="oracle-contract-log">
+									</div>
+							</section>
+							<a class="button is-link">Finalize Bet Outcome</a>
                     </article>
                 </div>
             </div>
@@ -84,12 +100,25 @@
             </div>
         </div>
         <div class="tile is-parent">
-        <div class="tile is-child notification is-dark" style="display: flex; padding: 0; justify-content: center;">
-            <div class="content" style="display: flex; align-items: center;">
-            <p class="title" style="writing-mode: vertical-rl;">Blockchain</p>
-            </div>
+        <div class="tile is-child notification is-info">
+			<p class="title">Blockchain</p>
+			<p>Logs:</p>
+			<section class="box">
+					<div id="oracle-service-log">
+					</div>
+			</section>
+			<div class="field has-addons">
+				<div class="control">
+					<input class="input" type="text" placeholder="Search By">
+				</div>
+				<div class="control">
+					<a class="button is-danger">
+					UID
+					</a>
+				</div>
+			</div>
         </div>
         </div>
     </div>
-  </body>
+</body>
 </html>
